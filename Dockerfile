@@ -6,9 +6,9 @@ ENV NODE_ENV=production
 ENV PORT=3000
 
 WORKDIR /var/www
+COPY . ./
 RUN npm install
 
-COPY . ./
 
 EXPOSE ${PORT}
 
